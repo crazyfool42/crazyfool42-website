@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorge De La Cruz - Personal Webpage</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=CoFo+Sans:wght@400;700&display=swap');
+        
+        body {
+            font-family: 'CoFo Sans', sans-serif;
+            margin: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        nav {
+            position: fixed;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            display: block;
+            padding: 15px 20px;
+            color: #fff;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #444;
+        }
+        .section {
+            padding: 50px 20px;
+            margin-top: 60px;
+        }
+        .parallax {
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .about-me {
+            background: #333;
+            text-align: center;
+        }
+        .career-profile {
+            background: #555;
+            text-align: center;
+        }
+        .contact {
+            background: #777;
+            text-align: center;
+        }
+        .blog {
+            background: #999;
+            text-align: center;
+        }
+        h1, h2 {
+            margin: 0 0 20px 0;
+        }
+        p {
+            margin: 0 0 20px 0;
+            line-height: 1.6;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            .section {
+                padding: 30px 10px;
+                margin-top: 50px;
+            }
+            h1, h2 {
+                font-size: 1.5em;
+            }
+            p {
+                font-size: 1em;
+            }
+        }
+        @media (max-width: 480px) {
+            nav a {
+                padding: 10px 15px;
+            }
+            h1, h2 {
+                font-size: 1.2em;
+            }
+            p {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about-me">About Me</a>
+        <a href="#career-profile">My Career Profile</a>
+        <a href="#contact">Contact</a>
+        <a href="#blog">Blog</a>
+    </nav>
+
+    <!-- About Me Section -->
+    <div id="about-me" class="section about-me parallax" style="background-image: url('https://via.placeholder.com/1200x800');">
+        <h1>About Me</h1>
+        <p>Hello! I'm Jorge De La Cruz. Welcome to my personal webpage.</p>
+    </div>
+
+    <!-- My Career Profile Section -->
+    <div id="career-profile" class="section career-profile parallax" style="background-image: url('https://via.placeholder.com/1200x800');">
+        <h2>My Career Profile</h2>
+        <p>Here you'll find information about my professional background and career achievements.</p>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="section contact parallax" style="background-image: url('https://via.placeholder.com/1200x800');">
+        <h2>Contact</h2>
+        <p>You can reach me at: <a href="mailto:jorge@example.com">jorge@example.com</a></p>
+    </div>
+
+    <!-- Blog Section -->
+    <div id="blog" class="section blog parallax" style="background-image: url('https://via.placeholder.com/1200x800');">
+        <h2>Blog</h2>
+        <p>Welcome to my blog! Stay tuned for updates and posts.</p>
+    </div>
+
+</body>
+</html>
